@@ -5,7 +5,10 @@
   <h1>
     {{ title }}
   </h1>
-<app-heroes></app-heroes>
+<nav>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
 
 <img width="300" alt="MY Heroes" src="../src/assets/img/powerpuff.jpeg">
